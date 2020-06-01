@@ -135,6 +135,7 @@
           { text: 'Terminal', pct: 'width: 90%', },
           { text: 'NPM', pct: 'width: 85%', },
           { text: 'Yarn', pct: 'width: 70%', },
+          { text: 'Webpack', pct: 'width: 50%', },
 
           { text: 'Bitbucket', pct: 'width: 80%', },
           { text: 'Github', pct: 'width: 70%', },

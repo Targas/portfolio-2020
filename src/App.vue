@@ -62,7 +62,7 @@
           </p>
 
           <p>
-            Meu nome é <strong>Danilo</strong>. Sou <strong>desenvolvedor Front-end</strong>, tenho 33 anos. Sou de São Paulo. Já trabalhei com design, hoje meu foco é código.
+            Meu nome é <strong>Danilo</strong> e sou <strong>desenvolvedor Front-end</strong>. Tenho 33 anos e Sou de São Paulo. Já trabalhei com design, hoje meu foco é código.
           </p>
 
           <p class="section-subtitle mt">
@@ -70,15 +70,15 @@
           </p>
 
           <p>
-            Apesar da paixão e da bagagem que tenho com design, sempre gostei igualmente de código e encontrei no <strong>Front-end</strong> tudo aquilo que eu mais gostava: transformar código em <strong>arte</strong>. Não que codar não seja uma <strong>arte</strong>...
+            Apesar da paixão e da bagagem que tenho com design, sempre gostei igualmente de código. Encontrei no <strong>Front-end</strong> tudo aquilo que eu mais gostava: transformar código em <strong>arte</strong>. Não que codar não seja uma <strong>arte</strong>... Acho que você entendeu.
           </p>
 
           <p>
-            Costumo usar meu tempo livre com projetos pessoais, de vez em quando me pego reescrevendo um site inteiro apenas pelo prazer de testar algo novo. Também gosto de me desafiar criando coisas que eu acreditava não serem possíveis, talvez um hobby meu bastante estranho para muitos é desenhar usando <strong>HTML</strong> e <strong>CSS</strong>. Com isso, eu sempre aprendo coisas novas, cresço como desenvolvedor e quem sabe um dia eu não seja referência para alguém que quer aprender.
+            Costumo usar um pouco do meu tempo livre com projetos pessoais. De vez em quando me pego reescrevendo um site inteiro apenas pelo prazer de testar algo novo. Também gosto de me desafiar criando coisas que eu acreditava não serem possíveis. Talvez um hobby meu bastante estranho para muitos é desenhar usando <strong>HTML</strong> e <strong>CSS</strong>, eu me divirto com isso e sempre aprendo coisas novas, cresço como desenvolvedor e quem sabe um dia eu não seja referência para alguém que quer aprender.
           </p>
 
           <p>
-            Eu não esqueci do design, quando eu tenho um prazo legal tento deixar os sites mais interessantes. Quer ver um exemplo? <strong>Clica no navio no canto inferior direito, ali em baixo.</strong> Espero que goste.
+            Eu não esqueci do design, quando eu tenho um prazo legal tento deixar os sites mais interessantes. Quer ver um exemplo? <strong class="show-desktop">Clica no navio no canto inferior esquerdo, ali em baixo.</strong> <strong class="show-mobile">Aperta o botão com um navio no canto superior direito, ali em cima.</strong> Espero que goste!
           </p>
 
           <p class="section-subtitle mt">
@@ -86,7 +86,7 @@
           </p>
 
           <p>
-            Sou metódico, especialmente com organização, tento sempre fazer um código onde qualquer desenvolvedor consiga entender. Sempre tiro um tempo para experimentar alguma coisa nova, as tecnologias não param de surgir. Fiz este portfólio foi feito com Vue, eu pretendia fazer em Angular ou React, mas eu queria terminar rápido, então usei o framework que estou mais habituado.
+            Sou metódico, especialmente com organização, tento sempre fazer um código onde qualquer desenvolvedor consiga entender. Sempre tiro um tempo para experimentar alguma coisa nova, as tecnologias não param de surgir. Fiz este portfólio foi feito com Vue, eu pretendia fazer em Angular ou React, mas eu queria terminar rápido, então usei o framework que estou mais habituado. Eu poderia ter feito sem framework algum, mas qual seria a graça?
           </p>
 
           <p class="section-subtitle mt">
@@ -95,6 +95,10 @@
 
           <p>
             Nas empresas que trabalhei participei de grandes projetos para clientes como <strong>Porto Seguro</strong>, <strong>American Express</strong>,<strong>Tenda</strong>, <strong>Plano & Plano</strong>, <strong>Unicef</strong>, <strong>Bayard</strong> e <strong>Editora FTD</strong>. Foram projetos diversos, desde o mais simples E-Mail Marketing até portais complexos. 
+          </p>
+
+          <p>
+            Tiveram alguns projetos específicos que eu me diverti bastante fazendo. Dentre eles, se destaca um projeto onde o usuário subia fotos e ele gerava um mosaico. Lembro de outro, onde o usuário tirava uma foto e aplicava uns filtros. Foram diversos projetos divertidos. Tenho umas animações e desenhos que deixo no CodePen também, mas isto é papo para outra hora.
           </p>
 
         </div>

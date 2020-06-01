@@ -88,11 +88,18 @@
             text: 'E-Mail', 
           },
 
-          { 
+          {
             id: '',
             url: 'tel: +5511987916822',
             icon: 'fab fa-whatsapp',
             text: 'WhatsApp', 
+          },
+
+          {
+            id: '',
+            url: 'https://codepen.io/targas',
+            icon: 'fab fa-codepen',
+            text: 'Codepen', 
           },
         ],
 
