@@ -138,6 +138,11 @@
 
     background: #1b1c1b;
 
+    @media (max-width: 425px) {
+      width: 100%;
+      height: auto;
+    }
+
     .profile {
       display: flex;
       align-items: center;
@@ -147,6 +152,7 @@
 
       .profile-picture {
         border-radius: 50%;
+        max-width: 80px;
       }
 
       .about {
@@ -183,6 +189,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media (max-width: 425px) {
+        margin-bottom: 40px;
+      }
 
       a {
         margin: 0 10px;
@@ -244,6 +254,10 @@
 
       display: flex;
       flex-direction: column;
+
+      @media (max-width: 425px) {
+        display: none;
+      }
 
       a {
         display: flex;

@@ -178,9 +178,17 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+
     .col {
       width: calc(100% / 4);
       padding: 15px;
+
+      @media (max-width: 768px) {
+        width: 50%;
+      }
     }
   }
   

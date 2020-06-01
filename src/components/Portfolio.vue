@@ -903,6 +903,19 @@
 
       transition: all .3s ease;
 
+      @media (max-width: 1440px) {
+        min-height: 350px;
+      }
+
+      @media (max-width: 1024px) {
+        width: calc(100% / 2);
+        min-height: 350px;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
       &:hover {
         img {
           filter: blur(5px);

@@ -89,7 +89,7 @@
             Sou metódico, especialmente com organização, tento sempre fazer um código onde qualquer desenvolvedor consiga entender. Sempre tiro um tempo para experimentar alguma coisa nova, as tecnologias não param de surgir. Fiz este portfólio foi feito com Vue, eu pretendia fazer em Angular ou React, mas eu queria terminar rápido, então usei o framework que estou mais habituado.
           </p>
 
-          <p class="section-subtitle">
+          <p class="section-subtitle mt">
             Quais projetos você trabalhou?
           </p>
 
@@ -149,6 +149,11 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 425px) {
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
 
     &.light {
       background: #FFFFFF;
@@ -235,6 +240,13 @@ export default {
       flex-direction: column;
 
       transition: all .5s ease;
+
+      @media (max-width: 425px) {
+        bottom: unset;
+        left: unset;
+        top: 10px;
+        right: 10px;
+      }
 
       .ocean {
         width: 100%;
@@ -438,5 +450,13 @@ export default {
     width: calc(100vw - 320px);
     height: 100vh;
     overflow-y: scroll;
+
+    @media (max-width: 425px) {
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      overflow-y: unset;
+    }
   }
 </style>
