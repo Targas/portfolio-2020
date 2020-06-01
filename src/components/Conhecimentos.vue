@@ -115,6 +115,7 @@
           { text: 'SASS/SCSS', pct: 'width: 80%', },
           { text: 'LESS', pct: 'width: 30%', },
 
+          { text: 'BEM', pct: 'width: 70%', },
           { text: 'Bootstrap', pct: 'width: 70%', },
           { text: 'Materialize', pct: 'width: 65%', },
           { text: 'Vuetify', pct: 'width: 60%', },
@@ -126,7 +127,9 @@
           { text: 'Vue', pct: 'width: 65%', },
           { text: 'React', pct: 'width: 40%', },
           { text: 'Angular', pct: 'width: 40%', },
+          { text: 'Svelte', pct: 'width: 40%', },
           { text: 'Backbone', pct: 'width: 30%', },
+          { text: 'GraphQL', pct: 'width: 20%', },
 
           { text: 'SEO', pct: 'width: 70%', },
         ],
@@ -136,10 +139,13 @@
           { text: 'NPM', pct: 'width: 85%', },
           { text: 'Yarn', pct: 'width: 70%', },
           { text: 'Webpack', pct: 'width: 50%', },
+          { text: 'GULP', pct: 'width: 50%', },
+          { text: 'Grunt', pct: 'width: 50%', },
 
           { text: 'Bitbucket', pct: 'width: 80%', },
           { text: 'Github', pct: 'width: 70%', },
           { text: 'Gitlab', pct: 'width: 60%', },
+          { text: 'Git Flow', pct: 'width: 55%', },
         ],
 
         conhecimentosDesign: [
@@ -203,12 +209,12 @@
     overflow: hidden;
     margin: 15px 0;
 
-    background: #c6c6c6;
+    background: #1b1c1b;
 
     .conhecimento-text {
       color: #FFFFFF;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 16px;
 
       position: absolute;
       z-index: 5;
@@ -226,7 +232,7 @@
       left: 0;
       margin: 0;
       height: 100%;
-      background: #1b1c1b;
+      background: #000000;
     }
   }
 </style>

@@ -994,18 +994,18 @@
           margin: 15px;
 
           color: #000000;
-          font-size: 18px;
+          font-size: 20px;
           text-align: center;
           font-weight: 600;
           text-transform: uppercase;
         }
         .text {
-          font-size: 14px;
+          font-size: 16px;
           text-align: center;
           margin: 15px;
         }
         .tecnology {
-          font-size: 14px;
+          font-size: 16px;
           text-align: center;
           font-weight: 600;
           text-transform: uppercase;

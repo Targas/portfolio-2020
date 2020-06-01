@@ -139,6 +139,9 @@
 
 <style scoped lang="scss">
   .sidebar {
+    position: relative;
+    z-index: 1;
+
     width: 320px;
     height: 100vh;
     padding: 15px;
@@ -160,6 +163,7 @@
       .profile-picture {
         border-radius: 50%;
         max-width: 80px;
+        margin-right: 15px;
       }
 
       .about {
@@ -168,6 +172,7 @@
         align-items: center;
         justify-content: center;
         padding: 0 10px;
+        max-width: 180px;
 
         .first-name, .last-name, .profession {
           display: table;
@@ -268,7 +273,7 @@
 
       a {
         display: flex;
-        padding: 15px 0;
+        padding: 15px 10px;
 
         font-size: 18px;
         text-align: center;
@@ -307,7 +312,7 @@
         }
 
         &:hover {
-          background: rgba(0,0,0,.2);
+          background: #0D0E0D;
 
           i, svg {
             color: #b4d455;

@@ -66,7 +66,7 @@
           </p>
 
           <p class="section-subtitle mt">
-            Ué... Você não trabalhava com design?
+            Ué... Então você trabalhava com design?
           </p>
 
           <p>
@@ -162,6 +162,10 @@ export default {
     &.light {
       background: #FFFFFF;
 
+      &:before {
+        filter: invert(100%);
+      }
+
       .container {
         p {
           strong {
@@ -211,6 +215,10 @@ export default {
         p {
           color: #FFFFFF;
         }
+      }
+
+      .conhecimento {
+        background: #c6c6c6;
       }
 
       .curso {
