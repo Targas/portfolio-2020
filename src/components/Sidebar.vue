@@ -26,30 +26,30 @@
 
     <address>
       <a
-        v-for="item in contact"
-        :key="item.id"
-        :href="item.url" 
-        :target="item.target"
-        :class="item.class"
+        v-for="icon in contact"
+        :key="icon.url"
+        :href="icon.url" 
+        :target="icon.target"
+        :class="icon.class"
       >
-        <i :class="item.icon"></i>
+        <i :class="icon.icon"></i>
 
         <span>
-          {{ item.text }}
+          {{ icon.text }}
         </span>
       </a>
     </address>
 
     <nav>
       <a
-        v-for="item in menu"
-        :key="item.id"
-        :href="item.url"
+        v-for="link in menu"
+        :key="link.text"
+        :href="link.url"
       >
-        <i :class="item.icon"></i>
+        <i :class="link.icon"></i>
 
         <span>
-          {{ item.text }}
+          {{ link.text }}
         </span>
       </a>
     </nav>

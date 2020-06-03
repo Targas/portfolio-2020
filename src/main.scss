@@ -13,6 +13,9 @@
   input[type=search], ::-webkit-search-results-button, ::-webkit-search-cancel-button { -webkit-appearance: none; }
   ::-ms-clear, ::-webkit-clear-button { display: none; }
 
+  /* Debug */
+  // *, *:before, *:after { border: 1px solid red !important; }
+
   /* Fonts */
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap');
 
@@ -39,7 +42,8 @@
 
       display: block;
 
-      background: url('./assets/background.jpg');
+      background: #000000;
+      background-image: url('./assets/background.jpg');
       background-size: cover;
     }
   }

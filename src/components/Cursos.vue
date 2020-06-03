@@ -109,6 +109,10 @@
       margin: 10px;
       background: #1b1c1b;
 
+      @media (max-width: 425px) {
+        width: 100%;
+      }
+
       span {
         position: absolute;
         top: -10px;

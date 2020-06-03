@@ -54,8 +54,9 @@
     >
       <div
         class="project"
+        :key="project.image"
+        v-for="project in projects"
         v-if="currentFilter === project.category || currentFilter === 'tudo'"
-        :key="project.title" v-for="project in projects"
       >
         <div class="about">
           <p class="title">
@@ -120,21 +121,354 @@
           {
             category: 'web',
             
-            title: 'Site | Pirate Day 2016',
-            text: 'Landing Page para o evento do grupo Aliança Pirata.',
-            tecnology: 'HTML | CSS | Jquery',
+            title: 'Site | Tenda Mobile',
+            text: 'Portal Tenda versão mobile, baseado no APP',
+            tecnology: 'HTML | CSS | Javascript',
 
-            link: 'http://www.pirateday.com.br',
+            link: 'http://www.tenda.com.br',
 
-            image: require('@/assets/portfolio/alianca-pirata/pirate-day/2016/site/screen.jpg'),
+            image: require('@/assets/portfolio/tenda/novo-site-mobile/screen.jpg'),
             images: [
-              require('@/assets/portfolio/alianca-pirata/pirate-day/2016/site/screen.jpg'),
-              require('@/assets/portfolio/alianca-pirata/pirate-day/2016/site/1.jpg'),
-              require('@/assets/portfolio/alianca-pirata/pirate-day/2016/site/2.jpg'),
-              require('@/assets/portfolio/alianca-pirata/pirate-day/2016/site/3.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/screen.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/1.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/2.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/3.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/4.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/5.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/6.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/7.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/8.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/9.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/10.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/11.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/12.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/13.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/14.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/15.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/16.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/17.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/18.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/19.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/20.jpg'),
+              require('@/assets/portfolio/tenda/novo-site-mobile/21.jpg'),
             ]
           },
 
+          {
+            category: 'web',
+            
+            title: 'Site | Pequenos Decoradores',
+            text: 'Site do concurso Pequenos Decoradores da Tenda',
+            tecnology: 'HTML | CSS | Javascript',
+
+            link: '',
+
+            image: require('@/assets/portfolio/tenda/pequenos-decoradores/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/tenda/pequenos-decoradores/screen.jpg'),
+              require('@/assets/portfolio/tenda/pequenos-decoradores/1.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Site | Plano Faixa Preta',
+            text: 'SIte feito para a Plano & Plano',
+            tecnology: 'HTML | CSS | Javascript',
+
+            link: '',
+
+            image: require('@/assets/portfolio/plano/faixa-preta/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/plano/faixa-preta/screen.jpg'),
+              require('@/assets/portfolio/plano/faixa-preta/1.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Site | Tenda',
+            text: 'Site feito para a Tenda. O usuário fazia upload da sua foto que agregava no mosaico até que a nova marca aparecesse por completo.',
+            tecnology: 'HTML | CSS | Javascript',
+
+            link: '',
+
+            image: require('@/assets/portfolio/tenda/mosaico/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/tenda/mosaico/screen.jpg'),
+              require('@/assets/portfolio/tenda/mosaico/1.jpg'),
+              require('@/assets/portfolio/tenda/mosaico/2.jpg'),
+            ]
+          },
+          
+          {
+            category: 'web',
+            
+            title: 'Site | Pirate Day',
+            text: 'Landing Page para o evento do grupo Aliança Pirata',
+            tecnology: 'HTML | SASS | VUE',
+
+            link: 'http://www.pirateday.com.br',
+
+            image: require('@/assets/portfolio/alianca-pirata/pirate-day/2019/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/alianca-pirata/pirate-day/2019/screen.jpg'),
+              require('@/assets/portfolio/alianca-pirata/pirate-day/2019/1.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Site | Unicef',
+            text: 'Site Busca Ativa Escolar desenvolvido para a Unicef',
+            tecnology: 'HTML | SASS | Javascript',
+
+            link: 'https://buscaativaescolar.org.br/',
+
+            image: require('@/assets/portfolio/busca-ativa/lp/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/busca-ativa/lp/screen.jpg'),
+              require('@/assets/portfolio/busca-ativa/lp/1.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Site | Share',
+            text: 'Site desenvolvido para a Share',
+            tecnology: 'HTML | SASS | JQuery',
+
+            link: 'https://sharesl.com.br/',
+
+            image: require('@/assets/portfolio/share/site/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/share/site/screen.jpg'),
+              require('@/assets/portfolio/share/site/1.jpg'),
+              require('@/assets/portfolio/share/site/2.jpg'),
+              require('@/assets/portfolio/share/site/3.jpg'),
+              require('@/assets/portfolio/share/site/4.jpg'),
+              require('@/assets/portfolio/share/site/5.jpg'),
+              require('@/assets/portfolio/share/site/6.jpg'),
+              require('@/assets/portfolio/share/site/7.jpg'),
+              require('@/assets/portfolio/share/site/8.jpg'),
+              require('@/assets/portfolio/share/site/9.jpg'),
+              require('@/assets/portfolio/share/site/10.jpg'),
+              require('@/assets/portfolio/share/site/11.jpg'),
+              require('@/assets/portfolio/share/site/12.jpg'),
+              require('@/assets/portfolio/share/site/13.jpg'),
+              require('@/assets/portfolio/share/site/14.jpg'),
+              require('@/assets/portfolio/share/site/15.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Site | Porto Seguro',
+            text: 'Site Porto Seguro Aluguel desenvolvida para a Porto Seguro',
+            tecnology: 'HTML | SASS | JQuery',
+
+            link: '',
+
+            image: require('@/assets/portfolio/pseg/site/aluguel/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/pseg/site/aluguel/screen.jpg'),
+              require('@/assets/portfolio/pseg/site/aluguel/1.jpg'),
+              require('@/assets/portfolio/pseg/site/aluguel/2.jpg'),
+              require('@/assets/portfolio/pseg/site/aluguel/3.jpg'),
+              require('@/assets/portfolio/pseg/site/aluguel/4.jpg'),
+              require('@/assets/portfolio/pseg/site/aluguel/5.jpg'),
+              require('@/assets/portfolio/pseg/site/aluguel/6.jpg'),
+              require('@/assets/portfolio/pseg/site/aluguel/7.jpg'),
+              require('@/assets/portfolio/pseg/site/aluguel/8.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Landing Page | Porto Seguro',
+            text: 'Landing Page Instituto Porto desenvolvida para a Porto Seguro',
+            tecnology: 'HTML | SASS | JQuery',
+
+            link: '',
+
+            image: require('@/assets/portfolio/pseg/lp/instituto/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/pseg/lp/instituto/screen.jpg'),
+              require('@/assets/portfolio/pseg/lp/instituto/1.jpg'),
+              require('@/assets/portfolio/pseg/lp/instituto/2.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Landing Page | Porto Seguro',
+            text: 'Landing Page Investimentos desenvolvida para a Porto Seguro',
+            tecnology: 'HTML | SASS | JQuery',
+
+            link: '',
+
+            image: require('@/assets/portfolio/pseg/lp/investimentos/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/pseg/lp/investimentos/screen.jpg'),
+              require('@/assets/portfolio/pseg/lp/investimentos/1.jpg'),
+              require('@/assets/portfolio/pseg/lp/investimentos/2.jpg'),
+              require('@/assets/portfolio/pseg/lp/investimentos/3.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Landing Page | Share',
+            text: 'Landing Page desenvolvida para a Share',
+            tecnology: 'HTML | SASS | JQuery',
+
+            link: '',
+
+            image: require('@/assets/portfolio/share/lp/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/share/lp/screen.jpg'),
+              require('@/assets/portfolio/share/lp/1.jpg'),
+              require('@/assets/portfolio/share/lp/2.jpg'),
+              require('@/assets/portfolio/share/lp/3.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Landing Page | Kallas',
+            text: 'Landing page Bosque da Saúde, desenvolvido para a Kallas',
+            tecnology: 'HTML | SASS | JQuery',
+
+            link: '',
+
+            image: require('@/assets/portfolio/kallas/lp/bosque/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/kallas/lp/bosque/screen.jpg'),
+              require('@/assets/portfolio/kallas/lp/bosque/1.jpg'),
+              require('@/assets/portfolio/kallas/lp/bosque/2.jpg'),
+              require('@/assets/portfolio/kallas/lp/bosque/3.jpg'),
+              require('@/assets/portfolio/kallas/lp/bosque/4.jpg'),
+              require('@/assets/portfolio/kallas/lp/bosque/5.jpg'),
+              require('@/assets/portfolio/kallas/lp/bosque/6.jpg'),
+              require('@/assets/portfolio/kallas/lp/bosque/7.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Landing Page | Kallas',
+            text: 'Landing page Parque da Serra, desenvolvido para a Kallas',
+            tecnology: 'HTML | SASS | JQuery',
+
+            link: '',
+
+            image: require('@/assets/portfolio/kallas/lp/parque/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/kallas/lp/parque/screen.jpg'),
+              require('@/assets/portfolio/kallas/lp/parque/1.jpg'),
+              require('@/assets/portfolio/kallas/lp/parque/2.jpg'),
+              require('@/assets/portfolio/kallas/lp/parque/3.jpg'),
+              require('@/assets/portfolio/kallas/lp/parque/4.jpg'),
+              require('@/assets/portfolio/kallas/lp/parque/5.jpg'),
+              require('@/assets/portfolio/kallas/lp/parque/6.jpg'),
+              require('@/assets/portfolio/kallas/lp/parque/7.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Landing Page | Kallas',
+            text: 'Landing page Meu Taboão é Aqui, desenvolvido para a Kallas',
+            tecnology: 'HTML | SASS | JQuery',
+
+            link: '',
+
+            image: require('@/assets/portfolio/kallas/lp/taboao/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/kallas/lp/taboao/screen.jpg'),
+              require('@/assets/portfolio/kallas/lp/taboao/1.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Landing Page | Kallas',
+            text: 'Landing page Unique, desenvolvido para a Kallas',
+            tecnology: 'HTML | SASS | JQuery',
+
+            link: '',
+
+            image: require('@/assets/portfolio/kallas/lp/unique/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/kallas/lp/unique/screen.jpg'),
+              require('@/assets/portfolio/kallas/lp/unique/1.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Landing Page | Pede Sabores',
+            text: 'Landing Page Feiríssima desenvolvido para a Pede Sabores',
+            tecnology: 'HTML | SASS | Jquery',
+
+            link: '',
+
+            image: require('@/assets/portfolio/pede-sabores/lp/feirissima/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/pede-sabores/lp/feirissima/screen.jpg'),
+              require('@/assets/portfolio/pede-sabores/lp/feirissima/1.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Landing Page | Sunshine',
+            text: 'Landing page desenvolvida para a Allumé',
+            tecnology: 'HTML | CSS | Javascript',
+
+            link: 'http://sunshineprofessional.com.br',
+
+            image: require('@/assets/portfolio/sunshine/lp/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/sunshine/lp/screen.jpg'), 
+              require('@/assets/portfolio/sunshine/lp/1.jpg'),
+            ]
+          },
+
+          {
+            category: 'web',
+            
+            title: 'Site | Eldhrimnir',
+            text: 'Site desenvolvido para banda Eldhrimnir',
+            tecnology: 'HTML | SASS | JQuery',
+
+            link: '',
+
+            image: require('@/assets/portfolio/eldhrimnir/site/screen.jpg'),
+            images: [
+              require('@/assets/portfolio/eldhrimnir/site/screen.jpg'),
+              require('@/assets/portfolio/eldhrimnir/site/1.jpg'),
+              require('@/assets/portfolio/eldhrimnir/site/2.jpg'),
+              require('@/assets/portfolio/eldhrimnir/site/3.jpg'),
+              require('@/assets/portfolio/eldhrimnir/site/4.jpg'),
+            ]
+          },
+
+          //EMKT
           {
             category: 'web',
             
@@ -234,109 +568,9 @@
           {
             category: 'web',
             
-            title: 'Busca Ativa Escolar | Unicef',
-            text: 'Site desenvolvido para a Unicef.',
-            tecnology: 'HTML | SASS | Javascript',
-
-            link: 'https://buscaativaescolar.org.br/',
-
-            image: require('@/assets/portfolio/busca-ativa/lp/screen.jpg'),
-            images: [
-              require('@/assets/portfolio/busca-ativa/lp/screen.jpg'),
-              require('@/assets/portfolio/busca-ativa/lp/1.jpg'),
-              require('@/assets/portfolio/busca-ativa/lp/2.jpg'),
-              require('@/assets/portfolio/busca-ativa/lp/3.jpg'),
-              require('@/assets/portfolio/busca-ativa/lp/4.jpg'),
-              require('@/assets/portfolio/busca-ativa/lp/5.jpg'),
-              require('@/assets/portfolio/busca-ativa/lp/6.jpg'),
-            ]
-          },
-
-          {
-            category: 'web',
-            
-            title: 'Site | Eldhrimnir',
-            text: 'Site desenvolvido para banda Eldhrimnir.',
-            tecnology: 'HTML | SASS | JQuery',
-
-            link: '',
-
-            image: require('@/assets/portfolio/eldhrimnir/site/screen.jpg'),
-            images: [
-              require('@/assets/portfolio/eldhrimnir/site/screen.jpg'),
-              require('@/assets/portfolio/eldhrimnir/site/1.jpg'),
-              require('@/assets/portfolio/eldhrimnir/site/2.jpg'),
-              require('@/assets/portfolio/eldhrimnir/site/3.jpg'),
-              require('@/assets/portfolio/eldhrimnir/site/4.jpg'),
-            ]
-          },
-
-          {
-            category: 'web',
-            
-            title: 'Landing Page | Kallas',
-            text: 'Landing page Bosque da Saúde, desenvolvido para a Kallas',
-            tecnology: 'HTML | SASS | JQuery',
-
-            link: '',
-
-            image: require('@/assets/portfolio/kallas/lp/bosque/screen.jpg'),
-            images: [
-              require('@/assets/portfolio/kallas/lp/bosque/screen.jpg'),
-              require('@/assets/portfolio/kallas/lp/bosque/1.jpg'),
-              require('@/assets/portfolio/kallas/lp/bosque/2.jpg'),
-              require('@/assets/portfolio/kallas/lp/bosque/3.jpg'),
-              require('@/assets/portfolio/kallas/lp/bosque/4.jpg'),
-              require('@/assets/portfolio/kallas/lp/bosque/5.jpg'),
-              require('@/assets/portfolio/kallas/lp/bosque/6.jpg'),
-              require('@/assets/portfolio/kallas/lp/bosque/7.jpg'),
-            ]
-          },
-
-          {
-            category: 'web',
-            
-            title: 'Landing Page | Kallas',
-            text: 'Landing page Parque da Serra, desenvolvido para a Kallas',
-            tecnology: 'HTML | SASS | JQuery',
-
-            link: '',
-
-            image: require('@/assets/portfolio/kallas/lp/parque/screen.jpg'),
-            images: [
-              require('@/assets/portfolio/kallas/lp/parque/screen.jpg'),
-              require('@/assets/portfolio/kallas/lp/parque/1.jpg'),
-              require('@/assets/portfolio/kallas/lp/parque/2.jpg'),
-              require('@/assets/portfolio/kallas/lp/parque/3.jpg'),
-              require('@/assets/portfolio/kallas/lp/parque/4.jpg'),
-              require('@/assets/portfolio/kallas/lp/parque/5.jpg'),
-              require('@/assets/portfolio/kallas/lp/parque/6.jpg'),
-              require('@/assets/portfolio/kallas/lp/parque/7.jpg'),
-            ]
-          },
-
-          {
-            category: 'web',
-            
-            title: 'Landing Page | Kallas',
-            text: 'Landing page Meu Taboão é Aqui, desenvolvido para a Kallas',
-            tecnology: 'HTML | SASS | JQuery',
-
-            link: '',
-
-            image: require('@/assets/portfolio/kallas/lp/taboao/screen.jpg'),
-            images: [
-              require('@/assets/portfolio/kallas/lp/taboao/screen.jpg'),
-              require('@/assets/portfolio/kallas/lp/taboao/1.jpg'),
-            ]
-          },
-
-          {
-            category: 'web',
-            
             title: 'Email Marketing | Pede Sabores',
             text: 'Email Marketing desenvolvido para a Pede Sabores',
-            tecnology: 'HTML | CSS',
+            tecnology: 'HTML | CSS inline',
 
             link: '',
 
@@ -350,25 +584,9 @@
           {
             category: 'web',
             
-            title: 'Landing Page | Pede Sabores',
-            text: 'Landing Page Feiríssima desenvolvido para a Pede Sabores',
-            tecnology: 'HTML | SASS | Jquery',
-
-            link: '',
-
-            image: require('@/assets/portfolio/pede-sabores/lp/feirissima/screen.jpg'),
-            images: [
-              require('@/assets/portfolio/pede-sabores/lp/feirissima/screen.jpg'),
-              require('@/assets/portfolio/pede-sabores/lp/feirissima/1.jpg'),
-            ]
-          },
-
-          {
-            category: 'web',
-            
             title: 'Email Marketing | Porto Seguro',
             text: 'Email Marketing desenvolvido para a Porto Seguro',
-            tecnology: 'HTML | CSS',
+            tecnology: 'HTML | CSS inline',
 
             link: '',
 
@@ -384,7 +602,7 @@
             
             title: 'Email Marketing | Porto Seguro',
             text: 'Email Marketing desenvolvido para a Porto Seguro',
-            tecnology: 'HTML | CSS',
+            tecnology: 'HTML | CSS inline',
 
             link: '',
 
@@ -400,7 +618,7 @@
             
             title: 'Email Marketing | Porto Seguro',
             text: 'Email Marketing desenvolvido para a Porto Seguro',
-            tecnology: 'HTML | CSS',
+            tecnology: 'HTML | CSS inline',
 
             link: '',
 
@@ -416,7 +634,7 @@
             
             title: 'Email Marketing | Porto Seguro',
             text: 'Email Marketing desenvolvido para a Porto Seguro',
-            tecnology: 'HTML | CSS',
+            tecnology: 'HTML | CSS inline',
 
             link: '',
 
@@ -432,7 +650,7 @@
             
             title: 'Email Marketing | Porto Seguro',
             text: 'Email Marketing desenvolvido para a Porto Seguro',
-            tecnology: 'HTML | CSS',
+            tecnology: 'HTML | CSS inline',
 
             link: '',
 
@@ -446,115 +664,9 @@
           {
             category: 'web',
             
-            title: 'Landing Page | Porto Seguro',
-            text: 'Landing Page Instituto Porto desenvolvida para a Porto Seguro',
-            tecnology: 'HTML | SASS | JQuery',
-
-            link: '',
-
-            image: require('@/assets/portfolio/pseg/lp/instituto/screen.jpg'),
-            images: [
-              require('@/assets/portfolio/pseg/lp/instituto/screen.jpg'),
-              require('@/assets/portfolio/pseg/lp/instituto/1.jpg'),
-              require('@/assets/portfolio/pseg/lp/instituto/2.jpg'),
-            ]
-          },
-
-          {
-            category: 'web',
-            
-            title: 'Landing Page | Porto Seguro',
-            text: 'Landing Page Investimentos desenvolvida para a Porto Seguro',
-            tecnology: 'HTML | SASS | JQuery',
-
-            link: '',
-
-            image: require('@/assets/portfolio/pseg/lp/investimentos/screen.jpg'),
-            images: [
-              require('@/assets/portfolio/pseg/lp/investimentos/screen.jpg'),
-              require('@/assets/portfolio/pseg/lp/investimentos/1.jpg'),
-              require('@/assets/portfolio/pseg/lp/investimentos/2.jpg'),
-              require('@/assets/portfolio/pseg/lp/investimentos/3.jpg'),
-            ]
-          },
-
-          {
-            category: 'web',
-            
-            title: 'Site | Porto Seguro',
-            text: 'Site Porto Seguro Aluguel desenvolvida para a Porto Seguro',
-            tecnology: 'HTML | SASS | JQuery',
-
-            link: '',
-
-            image: require('@/assets/portfolio/pseg/site/aluguel/screen.jpg'),
-            images: [
-              require('@/assets/portfolio/pseg/site/aluguel/screen.jpg'),
-              require('@/assets/portfolio/pseg/site/aluguel/1.jpg'),
-              require('@/assets/portfolio/pseg/site/aluguel/2.jpg'),
-              require('@/assets/portfolio/pseg/site/aluguel/3.jpg'),
-              require('@/assets/portfolio/pseg/site/aluguel/4.jpg'),
-              require('@/assets/portfolio/pseg/site/aluguel/5.jpg'),
-              require('@/assets/portfolio/pseg/site/aluguel/6.jpg'),
-              require('@/assets/portfolio/pseg/site/aluguel/7.jpg'),
-              require('@/assets/portfolio/pseg/site/aluguel/8.jpg'),
-            ]
-          },
-
-          {
-            category: 'web',
-            
-            title: 'Landing Page | Share',
-            text: 'Landing Page desenvolvida para a Share',
-            tecnology: 'HTML | SASS | JQuery',
-
-            link: '',
-
-            image: require('@/assets/portfolio/share/lp/screen.jpg'),
-            images: [
-              require('@/assets/portfolio/share/lp/screen.jpg'),
-              require('@/assets/portfolio/share/lp/1.jpg'),
-              require('@/assets/portfolio/share/lp/2.jpg'),
-              require('@/assets/portfolio/share/lp/3.jpg'),
-            ]
-          },
-
-          {
-            category: 'web',
-            
-            title: 'Site | Share',
-            text: 'Site desenvolvida para a Share',
-            tecnology: 'HTML | SASS | JQuery',
-
-            link: 'https://sharesl.com.br/',
-
-            image: require('@/assets/portfolio/share/site/screen.jpg'),
-            images: [
-              require('@/assets/portfolio/share/site/screen.jpg'),
-              require('@/assets/portfolio/share/site/1.jpg'),
-              require('@/assets/portfolio/share/site/2.jpg'),
-              require('@/assets/portfolio/share/site/3.jpg'),
-              require('@/assets/portfolio/share/site/4.jpg'),
-              require('@/assets/portfolio/share/site/5.jpg'),
-              require('@/assets/portfolio/share/site/6.jpg'),
-              require('@/assets/portfolio/share/site/7.jpg'),
-              require('@/assets/portfolio/share/site/8.jpg'),
-              require('@/assets/portfolio/share/site/9.jpg'),
-              require('@/assets/portfolio/share/site/10.jpg'),
-              require('@/assets/portfolio/share/site/11.jpg'),
-              require('@/assets/portfolio/share/site/12.jpg'),
-              require('@/assets/portfolio/share/site/13.jpg'),
-              require('@/assets/portfolio/share/site/14.jpg'),
-              require('@/assets/portfolio/share/site/15.jpg'),
-            ]
-          },
-
-          {
-            category: 'web',
-            
             title: 'Email Marketing | Tishman Speyer',
             text: 'Email Marketing desenvolvido para a Tishman Speyer',
-            tecnology: 'HTML | CSS',
+            tecnology: 'HTML | CSS inline',
 
             link: '',
 
@@ -570,7 +682,7 @@
             
             title: 'Email Marketing | Tishman Speyer',
             text: 'Email Marketing desenvolvido para a Tishman Speyer',
-            tecnology: 'HTML | CSS',
+            tecnology: 'HTML | CSS inline',
 
             link: '',
 
@@ -634,7 +746,7 @@
           {
             category: 'design',
             
-            title: 'Yahoey | Eldhrimnir',
+            title: 'CD | Eldhrimnir',
             text: 'Arte para o CD Yahoey da banda Eldhrimnir',
             tecnology: 'Photoshop | Illustrator | 3Ds Max',
 
@@ -650,7 +762,7 @@
           {
             category: 'design',
             
-            title: 'Yahoey | Eldhrimnir',
+            title: 'Encarte | Eldhrimnir',
             text: 'Arte para o encarte do CD Yahoey da banda Eldhrimnir',
             tecnology: 'Photoshop | Illustrator | 3Ds Max',
 
@@ -698,7 +810,7 @@
           {
             category: 'design',
             
-            title: 'Scary Faces | Editora FTD',
+            title: 'Jogo | Editora FTD',
             text: 'Arte do jogo Scary Faces feito para a Editora FTD',
             tecnology: 'Photoshop',
 
@@ -718,9 +830,9 @@
           {
             category: 'design',
             
-            title: 'Ahoy! | SP-JAM',
+            title: 'Jogo | SP-JAM',
             text: 'Sprites para o jogo Ahoy! feito para a SP-JAM 2015',
-            tecnology: 'Photoshop',
+            tecnology: 'Photoshop | 3Ds Max',
 
             link: 'https://github.com/DfKimera/ahoy',
 

@@ -4,20 +4,10 @@
     :class="{ light: active }"
   >
     <!--
-    Adicionar no portfolio
-
-    Corretor faixa preta
-    Site da Tenda
-    LP Sunshine
-    Tenda Mosaico
-    Archtech
+    Corretor faixa preta interna
     Palco Tenda
-    FDC
-    Tenda Natal Pequenos construtores
 
-    kallas unique
-    Pirate Day 2019
-    EMKT tishman 1 -  fazer screen
+    testmonials
     -->
 
     <button
@@ -62,7 +52,7 @@
           </p>
 
           <p>
-            Meu nome é <strong>Danilo</strong> e sou <strong>desenvolvedor Front-end</strong>. Tenho 33 anos e Sou de São Paulo. Já trabalhei com design, hoje meu foco é código.
+            Meu nome é <strong>Danilo</strong> e sou <strong>desenvolvedor Front-end</strong>. Tenho 33 anos e Sou de São Paulo. Durante muitos anos fui designer, trabalhei com offline, digital, 3D, ilustração, animação... Hoje meu foco é código.
           </p>
 
           <p class="section-subtitle mt">
@@ -70,7 +60,7 @@
           </p>
 
           <p>
-            Apesar da paixão e da bagagem que tenho com design, sempre gostei igualmente de código. Encontrei no <strong>Front-end</strong> tudo aquilo que eu mais gostava: transformar código em <strong>arte</strong>. Não que codar não seja uma <strong>arte</strong>... Acho que você entendeu.
+            Sim! Apesar da paixão e da bagagem que tenho com design, sempre gostei igualmente de código. Encontrei no <strong>Front-end</strong> tudo aquilo que eu mais gostava: transformar código em <strong>arte</strong>. Não que codar não seja uma <strong>arte</strong>... Acho que você entendeu.
           </p>
 
           <p>
@@ -94,7 +84,7 @@
           </p>
 
           <p>
-            Nas empresas que trabalhei participei de grandes projetos para clientes como <strong>Porto Seguro</strong>, <strong>American Express</strong>,<strong>Tenda</strong>, <strong>Plano & Plano</strong>, <strong>Unicef</strong>, <strong>Bayard</strong> e <strong>Editora FTD</strong>. Foram projetos diversos, desde o mais simples E-Mail Marketing até portais complexos. 
+            Nas empresas que trabalhei participei de grandes projetos para clientes como <strong>Porto Seguro</strong>, <strong>American Express</strong>, <strong>Tenda</strong>, <strong>Plano & Plano</strong>, <strong>Unicef</strong>, <strong>Bayard</strong> e <strong>Editora FTD</strong>. Foram projetos diversos, desde o mais simples E-Mail Marketing até portais complexos. 
           </p>
 
           <p>
@@ -125,12 +115,6 @@ import Cursos from './components/Cursos.vue'
 
 export default {
   name: 'App',
-
-  data() {
-    return {
-      active: false
-    }
-  },
 
   components: {
     Sidebar,
@@ -222,7 +206,15 @@ export default {
       }
 
       .curso {
-        color: #FFFFFF;
+        background: #c6c6c6;
+
+        .title {
+          color: #000000;
+        }
+
+        .inst {
+          color: #1b1c1b;
+        }
       }
     }
 
