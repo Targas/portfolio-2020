@@ -122,6 +122,12 @@ export default {
     Conhecimentos,
     Cursos,
   },
+
+  data() {
+    return {
+      active: false,
+    }
+  },
 }
 </script>
 
