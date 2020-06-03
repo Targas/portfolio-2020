@@ -8,7 +8,7 @@
 
     <div class="container">
       <p>
-        Alguns cursos que fiz. Claro que inda tem um monte que quero fazer, e tem muita coisa que eu aprendi apenas quebrando a cabeça ou com simples tutoriais de youtube.
+        Alguns cursos que fiz. Claro que ainda tem um monte que quero fazer, e tem muita coisa que eu aprendi apenas quebrando a cabeça ou com simples tutoriais de youtube.
       </p>
     </div>
 

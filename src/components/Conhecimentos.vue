@@ -8,7 +8,7 @@
 
     <div class="container">
       <p>
-        Citei abaixo algumas tecnologias que tenho experiência. Algumas eu uso diariamente, outras eu usei pouco mas ainda lembro o suficiente. Quem sabe um dia eu não encho todas as barrinhas, não custa sonhar.
+        Citei abaixo algumas tecnologias que tenho experiência. Quanto mais preenchida a barra, mais conhecimento tenho do assunto. Algumas destas tecnologias são de uso diário, outras eu usei pouco mas ainda lembro o suficiente. Quem sabe um dia eu não encho todas as barrinhas, não custa sonhar.
       </p>
     </div>
 
@@ -112,7 +112,8 @@
           { text: 'HTML', pct: 'width: 90%', },
 
           { text: 'CSS', pct: 'width: 85%', },
-          { text: 'SASS/SCSS', pct: 'width: 80%', },
+          { text: 'SASS', pct: 'width: 80%', },
+          { text: 'SCSS', pct: 'width: 80%', },
           { text: 'LESS', pct: 'width: 30%', },
 
           { text: 'BEM', pct: 'width: 70%', },
